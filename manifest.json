@@ -1,0 +1,37 @@
+{
+  "manifest_version": 3,
+  "name": "Harper Grammar Checker",
+  "description": "Automatically checks spelling and grammar in all text inputs using Harper.",
+  "version": "0.1",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["dist/content-script.bundle.js"],
+      "css": ["styles.css"],
+      "type": "module"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["harper/harper.wasm", "harper/harper.js", "harper/harper_wasm_bg.wasm", "harper/harper_wasm.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Harper Grammar Checker",
+    "default_popup": "popup.html"
+  }
+}

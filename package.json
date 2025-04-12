@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "harper.js": "^0.26.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.0" 
+  }
+}

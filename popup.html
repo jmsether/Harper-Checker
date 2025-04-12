@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="icons/icon48.png" alt="Harper Logo" class="logo">
+    <h1>Harper Checker</h1>
+  </header>
+  
+  <div class="toggle-section">
+    <div class="toggle-container">
+      <span class="toggle-label">Show Debug Border</span>
+      <label class="switch">
+        <input type="checkbox" id="toggleDebug">
+        <span class="slider"></span>
+      </label>
+    </div>
+    
+    <div class="toggle-container">
+      <span class="toggle-label">Auto-correct on Space</span>
+      <label class="switch">
+        <input type="checkbox" id="toggleAutoCorrect">
+        <span class="slider"></span>
+      </label>
+    </div>
+    
+    <div class="toggle-container">
+      <span class="toggle-label">Show Debug Messages</span>
+      <label class="switch">
+        <input type="checkbox" id="toggleDebugMessages">
+        <span class="slider"></span>
+      </label>
+    </div>
+  </div>
+  
+  <footer>
+    <div class="version">v0.1</div>
+  </footer>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
