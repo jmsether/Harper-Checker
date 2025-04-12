@@ -7,3 +7,7 @@ dist/
 # Optional: OS generated files
 .DS_Store
 Thumbs.db
+
+# Build/Package artifacts
+*.zip
+package.ps1
